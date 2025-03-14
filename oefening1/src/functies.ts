@@ -26,26 +26,15 @@ class Vehicle {
     protected startEngine() {
         console.log(`${this.brand} engine started.`);
     }
-    get beschrijving(): string {
-        return `${this.merk} ${this.model}`;
-    }
-    set jaar(value: number) {
-        if (value > 2000) {
-            this.bouwjaar = value;
-        } else {
-            console.log("Voer een geldig bouwjaar in.");
-        }
-    }
-
 }
 class Car extends Vehicle {
     private model: string;
     constructor(brand: string, model: string) {
-        super(brand);//constructor van bovenliggende klasse (Vehicle) wordt aangeroepen en brand wordt opgestuurd
+        super(brand);
         this.model = model;
     }
     public drive() {
-        this.startEngine(); // Toegang tot de 'startEngine'-methode via overerving
+        this.startEngine();
         console.log(`Driving the ${this.brand} ${this.model}.`);
     }
 }
