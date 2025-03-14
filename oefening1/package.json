@@ -1,0 +1,26 @@
+{
+  "name": "cvo_typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jquery-3.7.1.min.js",
+  "dependencies": {
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warreheeren/CVO_typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/warreheeren/CVO_typescript/issues"
+  },
+  "homepage": "https://github.com/warreheeren/CVO_typescript#readme"
+}
