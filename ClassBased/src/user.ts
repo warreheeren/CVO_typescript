@@ -4,7 +4,7 @@ class User {
     protected _email: string;
     private _password: string;
 
-    constructor(firstName: string, lastName: string, email: string,) {
+    constructor(firstName: string, lastName: string, email: string) {
         this._firstName = firstName;
         this._lastName = lastName;
         this._email = email;
@@ -38,6 +38,14 @@ class User {
         const spChar = "@#$%";
 
         let password = "";
+        password += letters[Math.floor(Math.random() * letters.length)];
+        password += nummers[Math.floor(Math.random() * nummers.length)];
+        password += spChar[Math.floor(Math.random() * spChar.length)];
+
+        for (let i = 3; i < 8; i++) {
+            const allChars = letters + nummers + spChar;
+            password += allChars[Math.floor(Math.random() * allChars.length)];
+        }
 
         return password;
     }
