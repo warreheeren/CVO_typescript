@@ -12,6 +12,7 @@ let events: CalendarEventAlias = [];
 
 function addEvent(title: string, date: string, description: string, attendees: number): CalendarEventInterface {
     const id = nextId++;
+
     const event = { id, title, date, description, attendees };
     events.push(event);
     return event;
@@ -31,6 +32,7 @@ function findEventByTitle(title: string): CalendarEventInterface | undefined {
 function searchEvents(woord: string): CalendarEventAlias {
     const woordZonderHoofdLetter = woord.toLowerCase();
     return events.filter(event => event.title.toLowerCase().includes(woordZonderHoofdLetter) || event.description.toLowerCase().includes(woordZonderHoofdLetter));
+
 }
 
 addEvent("TypeScript Workshop", "2034-03-15", "Een diepgaande workshop over TypeScript.", 100);

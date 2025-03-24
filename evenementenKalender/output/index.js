@@ -1,4 +1,5 @@
 "use strict";
+<<<<<<< HEAD
 let nextId = 0;
 let events = [];
 function addEvent(title, date, description, attendees) {
@@ -36,3 +37,5 @@ const searchResultsOver = searchEvents("over");
 searchResultsOver.forEach(event => console.log(event.title));
 console.log("\nEvenement 1 verwijderd:", removeEvent(1));
 console.log("\nHuidige Evenementen:", events);
+=======
+>>>>>>> e76638a3001b716bed74b304279de1c9bdf5531e
